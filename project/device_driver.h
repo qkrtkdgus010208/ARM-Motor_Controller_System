@@ -95,8 +95,8 @@ extern Motor_State_t cur_motor_state;
 extern unsigned char prev_motor_speed;
 extern unsigned char cur_motor_speed;
 
-extern volatile int Key_Pressed;
-extern volatile int Key_Released;
-extern volatile int Uart_Data_In;
+extern volatile unsigned char Key_Pressed;
+extern volatile unsigned char Key_Released;
+extern volatile unsigned char Uart_Data_In;
 extern volatile unsigned char Uart_Data;
-extern volatile int TIM4_Expired;
+extern volatile unsigned char TIM4_Expired;

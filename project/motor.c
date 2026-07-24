@@ -55,8 +55,6 @@ void MOTOR_Stop(void)
 
 void MOTOR_CW(void)
 {
-    if (prev_motor_state != STOP) MOTOR_Stop();
-
 	Macro_Write_Block(GPIOA->MODER, 0x3, 0x1, 0U);
 	Macro_Clear_Bit(GPIOA->OTYPER, 0U);
 	Macro_Clear_Bit(GPIOA->ODR, 0U);
@@ -69,8 +67,6 @@ void MOTOR_CW(void)
 
 void MOTOR_CCW(void)
 {
-    if (prev_motor_state != STOP) MOTOR_Stop();
-
 	Macro_Write_Block(GPIOA->MODER, 0x3, 0x2, 0U);
 	Macro_Write_Block(GPIOA->AFR[0], 0xf, 0x2, 0U);
 
