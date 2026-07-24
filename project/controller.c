@@ -10,11 +10,23 @@ void Motor_Controller(void)
         break;
 
     case CW:
-        MOTOR_CW();
+        if (prev_motor_state == STOP)
+            MOTOR_CW();
+        else
+        {
+            MOTOR_Stop();
+            MOTOR_CW();
+        }
         break;
 
     case CCW:
-        MOTOR_CCW();
+        if (prev_motor_state == STOP)
+            MOTOR_CCW();
+        else
+        {
+            MOTOR_Stop();
+            MOTOR_CCW();
+        }
         break;
 
     default:
