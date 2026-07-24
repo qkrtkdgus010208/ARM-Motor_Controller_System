@@ -6,11 +6,11 @@ Motor_State_t cur_motor_state = STOP;
 unsigned char prev_motor_speed = 1;
 unsigned char cur_motor_speed = 1;
 
-volatile int Key_Pressed = 0;
-volatile int Key_Released = 0;
-volatile int Uart_Data_In = 0;
+volatile unsigned char Key_Pressed = 0;
+volatile unsigned char Key_Released = 0;
+volatile unsigned char Uart_Data_In = 0;
 volatile unsigned char Uart_Data = 0;
-volatile int TIM4_Expired = 0;
+volatile unsigned char TIM4_Expired = 0;
 
 static void Sys_Init(int baud) 
 {
