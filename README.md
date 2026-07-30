@@ -312,3 +312,13 @@ typedef enum {
 | --- | --- |
 | Uart2_Init | Uart2 초기화 |
 | Uart2_RX_Interrupt_Enable | USART2_IRQHandler 활성화 |
+
+## 외관 사진
+<img width="1498" height="1540" alt="KakaoTalk_20260730_123306885" src="https://github.com/user-attachments/assets/5591f718-8155-47e5-8701-672099166f1e" />
+
+## 동작 영상
+|동작 영상 - 모터|
+|:---:|
+| [![동작 영상 - 모터](https://img.youtube.com/vi/GmYo-FkbSe4/hqdefault.jpg)](https://youtube.com/shorts/GmYo-FkbSe4) |
+
+
